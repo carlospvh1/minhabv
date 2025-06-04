@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atendimento Ambev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+</head>
+<body class="bg-amber-50 text-gray-800">
+
+  <!-- Cabeçalho fixo -->
+  <header class="fixed top-0 w-full bg-blue-600 shadow-md z-10">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="images/logo1.png" alt="Logo Ambev" class="h-7">
+      </div>
+      <nav class="space-x-1">
+        <a href="index.html" class="text-white hover:text-gray-200 font-semibold">Home</a>
+        <a href="contato.html" class="text-white hover:text-gray-200 font-semibold">Contato</a>
+        <a href="https://www.ze.delivery" class="text-white hover:text-gray-200 font-semibold">Comprar no Zé</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner rotativo -->
+ 
+    <!-- Texto sobreposto -->
+    <div class="banner-overlay">
+      <div class="text-center text-white px-1">
+        <h2 class="text-3xl md:text-4xl font-bold">CONTATO!</h2>
+        <p class="mt-2 text-lg max-w-2xl mx-auto">
+          Nossa localização é pensada para oferecer mais comodidade a você, com fácil acesso, produtos originais e preços justos que cabem no seu bolso.
+        </p>
+      </div>
+    </div>
+  </section>
+ <section class="max-w-4xl mx-auto my-12 px-4">
+  <h2 class="text-3xl font-bold text-blue-800 mb-6">
+   
+  </h2>
+  
+  <section id="contato" class="bg-white py-4 px-4">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Texto da esquerda -->
+    <div>
+      <h2 class="text-4xl font-bold text-blue-800 mb-4">Contato Rápido</h2>
+      <p class="text-gray-600 text-justify">
+        Entre em contato conosco para dúvidas sobre nossos produtos originais e preços competitivos.
+        Estamos aqui para ajudar!
+      </p>
+    </div>
+
+    <!-- Formulário -->
+    <form class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Seu nome completo</label>
+        <input type="text" placeholder="Digite seu nome aqui" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Seu e-mail*</label>
+        <input type="email" placeholder="Digite seu e-mail aqui" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Sua mensagem*</label>
+        <textarea rows="4" placeholder="Escreva sua mensagem aqui" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+
+      <button type="submit" class="bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-green-700 transition duration-300">
+        Enviar mensagem
+      </button>
+    </form>
+  </div>
+ </section>
+ <footer class="rodape">
+    <p>Política de Privacidade<br>
+    © 2025 Distribuidora de Bebidas. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    let index = 0;
+    const banners = [document.getElementById('banner1'), document.getElementById('banner2')];
+
+    setInterval(() => {
+      banners[index].style.opacity = '0';
+      index = (index + 1) % banners.length;
+      banners[index].style.opacity = '1';
+    }, 5000);
+  </script>
+
+</body>
+</html>

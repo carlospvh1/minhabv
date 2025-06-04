@@ -1,0 +1,109 @@
+.fale-com-alice {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+  max-width: 400px;
+  margin: 5px auto;
+  font-family: Arial, sans-serif;
+}
+
+.fale-com-alice .conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.fale-com-alice .texto {
+  flex: 1;
+}
+
+.fale-com-alice h2 {
+  color:hwb(234 7% 12%);
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.fale-com-alice p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.fale-com-alice .btn-chat,
+.fale-com-alice .btn-whatsapp {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fale-com-alice .btn-chat {
+  background-color: hwb(234 7% 12%);
+  color: white;
+}
+
+.fale-com-alice .btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+}
+
+.fale-com-alice .avatar {
+  width: 170px;
+  height: auto;
+}
+
+    .rodape {
+      background-color: #192ae0;
+      color: #ffffff;
+      text-align: center;
+      padding: 8px 5px;
+    }
+
+    .rodape img {
+      max-width: 100%;
+      height: auto;
+      margin: 7px 0;
+    }
+
+    .rodape p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    
+    
+    .banner-container {
+      max-width: 600px;
+      height: 195px;
+      margin: 29px auto 0 auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .banner-container img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: opacity 1s ease;
+      opacity: 0;
+    }
+
+    .banner-container img.active {
+      opacity: 1;
+      z-index: 1;
+    }
+  
